@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(null)
   const [loading, setLoading] = useState(true);
 
-  // ✅ NEW: สร้าง user object ที่ใช้ใน context อื่นๆ ได้
+
   const user = {
     username,
     role,
@@ -69,7 +69,7 @@ export const AuthProvider = ({ children }) => {
         role,
         displayName,
         token,
-        user, // ✅ NEW: เพิ่ม user object เข้า context
+        user, 
         login,
         logout,
         loading,
