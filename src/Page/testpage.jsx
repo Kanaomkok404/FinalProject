@@ -6,9 +6,9 @@ const testPage = () => {
   const [newComments, setNewComments] = useState({});
   const [showCommentBox, setShowCommentBox] = useState({});
   const [newQuestion, setNewQuestion] = useState({ user_name: "", content: "" });
-  const [uploadedFiles, setUploadedFiles] = useState([]); // 🔄 เปลี่ยนจาก imageFiles → uploadedFiles
+  const [uploadedFiles, setUploadedFiles] = useState([]); 
   const [showModal, setShowModal] = useState(false);
-  const [previewFiles, setPreviewFiles] = useState([]); // 🔄 เปลี่ยนจาก previewImages → previewFiles
+  const [previewFiles, setPreviewFiles] = useState([]); 
   const [previewCommentFiles, setPreviewCommentFiles] = useState({});
   const API_URL = "http://localhost:5000/questions";
   const COMMENT_URL = "http://localhost:5000/comments";
